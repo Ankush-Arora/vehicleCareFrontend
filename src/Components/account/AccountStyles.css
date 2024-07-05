@@ -1,0 +1,17 @@
+.account-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 2%;
+    /* background-color: brown; */
+    /* background-color: brown; */
+}
+
+@media screen and (max-width:740px) {
+    .account-container{
+        padding: 5% 0;
+    }
+}

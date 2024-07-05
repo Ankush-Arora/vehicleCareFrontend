@@ -1,0 +1,40 @@
+.team-card-container {
+    height: 300px;
+    width: 250px;
+    /* backdrop-filter: blur(10px); */
+   background-color:rgba(185, 210, 201, 0.308);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+.team-card-img img {
+    /* background-color: rgb(17, 17, 167); */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.horizontal-line {
+    margin: 2px;
+    height: 3px;
+    width: 100%;
+    ;
+}
+
+@media screen and (max-width:325px) {
+    .team-card-container {
+        height: 280px;
+        width: 220px;
+        /* backdrop-filter: blur(10px); */
+        /* background-color:rgb(203, 250, 250);  */
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 8px;
+    }
+}

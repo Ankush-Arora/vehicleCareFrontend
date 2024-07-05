@@ -1,0 +1,135 @@
+.account-card-container{
+    height: 450px;
+    width: 40%;
+    /* backdrop-filter: blur(10px); */
+      /* background-color:rgb(217, 227, 227);  */
+      /* background-color: blue; */
+      background-color:rgba(185, 210, 201, 0.5);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+.account-card-img img{
+    /* background-color: rgb(17, 17, 167); */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.horizontal-line-account
+{
+    margin: 2px;
+    /* height: 3px; */
+    width: 100%;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:740px) and (min-width:500px)
+{
+    .account-card-container{
+        height: 400px;
+        width:60%;
+        /* backdrop-filter: blur(10px); */
+          /* background-color:rgb(203, 250, 250);  */
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+        align-items: center;
+        padding: 10px 8px;
+        /* background-color: rgb(0, 0, 255); */
+    }
+}
+
+@media screen and (max-width:499px) {
+    .account-card-container{
+        height: 400px;
+        width:60%;
+        /* backdrop-filter: blur(10px); */
+          /* background-color:rgb(203, 250, 250);  */
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+        align-items: center;
+        padding: 10px 4px;
+    }
+}
+
+.account-btn button{
+    padding: 4px 5px;
+    cursor: pointer;
+    background-color: rgba(9, 9, 245, 0.63);
+    font-weight: 800;
+    font-size: small;
+    border-radius: 5px;
+}
+
+.account-btn button:hover{
+    background-color: rgb(37, 206, 37);
+     transform: scale(1.1);
+}
+
+.account-card-container div{
+    /* background-color: chartreuse; */
+    padding: 8px;
+}
+
+.account-card-img{
+    height: 20%;
+}
+
+#account-user-icon{
+    height: 100%;
+    width: 100%;
+}
+
+#admin-account-icon{
+    color: blue;
+    font-size: x-large;
+}
+
+#user-account-icon{
+    color: green;
+    font-size: x-large;
+}
+
+#line-horizontal-global{
+    height: 2px;
+    width: 100%;
+    color: black;
+    background-color: black;
+  }
+
+  #account-profile-links a{
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 4px 3px;
+    border-radius: 3px;
+   
+  }
+
+  #account-profile-links a:hover{
+    background-color: rgba(21, 21, 208, 0.167);
+    border: solid black 1px;
+  }
+
+  .account-card-container a{
+    color: rgba(75, 11, 135, 0.776);
+  }
+
+@media screen and (max-width:500px) {
+    #overflow-large-heading-account{
+        font-size: small;
+      }
+}
+
+@media screen and (max-width:410px) {
+    #overflow-large-heading-account{
+        font-size: x-small;
+      }
+}
+
+ 

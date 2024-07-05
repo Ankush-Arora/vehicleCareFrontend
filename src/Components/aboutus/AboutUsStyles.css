@@ -1,0 +1,192 @@
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+
+.about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-span-heading {
+    color: black;
+    font-weight: 900;
+    font-size: large;
+    padding: 10px;
+}
+
+.about-first,
+.about-third {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* background-color: rgb(220, 247, 247); */
+    background-color:rgba(185, 210, 201, 0.235);
+    padding: 70px 60px;
+    border-radius: 1em;
+    /* box-shadow: 0 0.188em 1.550em rgb(40, 29, 29); */
+}
+
+@media screen and (max-width:400px) {
+
+    .about-first,
+    .about-third {
+        padding: 50px 40px;
+        width: 80%;
+    }
+}
+
+.about-span-numbers {
+    color: black;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+@media screen and (max-width:400px) {
+    .about-span-numbers {
+        font-weight: 700;
+        font-size: x-large;
+    }
+}
+
+.about-second {
+    display: grid;
+    width: 80%;
+    /* background-color: rgb(115, 86, 86); */
+    border: 2px;
+    justify-content: center;
+    /* row-gap: 2rem; */
+    column-gap: 4rem;
+    grid-template-rows: repeat(1, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 60px;
+    margin: 10px 10px;
+}
+
+@media screen and (min-width:701px) and (max-width:1200px)
+{
+    .about-first,
+    .about-third {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .about-second {
+        display: grid;
+        /* background-color: rgb(115, 86, 86); */
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 4rem;
+        grid-template-rows: repeat(2, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 60px;
+        margin-top: 3px;
+    }
+
+    .about-first,
+    .about-third {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .about-second {
+        display: grid;
+        /* background-color: rgb(115, 86, 86); */
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 4rem;
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px 60px;
+        margin-top: 2px;
+    }
+}
+
+.about-second div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-fifth {
+    margin: 20px 10px;
+    padding: 30px 0;
+    /* background-color: chocolate; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(40, 29, 29);
+}
+
+.about-fourth {
+    /* background-color: blue; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(40, 29, 29);
+}
+
+.about-fourth-leaders {
+    /* background-color: rgb(252, 30, 30); */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    /* background-color: rgb(115, 86, 86); */
+    border: 2px;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-rows: repeat(1, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 60px;
+    /* margin-top: 5px; */
+}
+
+@media screen and (max-width:1200px) {
+    .about-fourth-leaders {
+        row-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-rows: repeat(2, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+        /* padding: 40px 60px; */
+        /* margin-top: 5px; */
+    }
+}
+
+@media screen and (max-width:650px) {
+    .about-fourth-leaders {
+        width: 100%;
+        place-items: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px 60px;
+        /* margin-top: 5px; */
+    }
+}
+
+ 

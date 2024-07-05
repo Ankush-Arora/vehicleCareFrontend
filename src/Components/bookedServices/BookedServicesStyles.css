@@ -1,0 +1,33 @@
+.booked-main-container{
+    height: 80vh;
+    overflow-y: auto;
+     display: grid;
+     place-items: center;
+    row-gap: 2em;
+}
+
+.booked-service{
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-bookings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: rgb(11, 159, 11);
+    background-color: whitesmoke;
+}
+
+#empty-booking-icon{
+    font-weight: 900;
+    font-size: larger;
+}
+
+#order-division{
+    height: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    
+}

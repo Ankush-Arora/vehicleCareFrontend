@@ -1,0 +1,21 @@
+.review-main{
+    height: 250px;
+    width: 300px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    text-overflow: ellipsis;
+    overflow: auto;
+}
+
+#user-comments{
+    font-size: small;
+}
+
+#review-main-top{
+    flex: none;
+}

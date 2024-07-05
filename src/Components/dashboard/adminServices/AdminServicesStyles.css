@@ -1,0 +1,55 @@
+.admin-services-container{
+     height: 100vh;
+     overflow-y: auto; 
+}
+
+ .add-newService-inputs input{
+          margin: 5px 0;
+ }
+
+ .add-newService-inputs > input::file-selector-button{
+   z-index: 2;
+    margin: 0;
+    background-color: white;
+    height: 2em;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+
+ .add-newService-inputs span{
+     font-weight: 800;
+     font-size: larger;
+     /* background-color: blue; */
+ }
+
+ @media screen and (max-width:600px) {
+
+    .add-newService-inputs input{
+        width: 60%;
+    }
+    
+ }
+
+ #create-service-form-image img ,#update-service-form-image img{
+    height: 50px;
+    margin-right: 5px;
+ }
+
+ #create-service-form-image,#update-service-form-image{
+    display: flex;
+    width: 40%;
+    overflow:  auto;
+ }
+
+ @media screen and (max-width:740px) {
+    #create-service-form-image,#update-service-form-image{
+        width: 85%;
+    }
+    
+ #create-service-form-image img,#update-service-form-image img{
+    height: 40px;
+    margin-right: 4px;
+ }
+ }

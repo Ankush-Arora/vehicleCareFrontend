@@ -1,0 +1,131 @@
+.bookings-order-main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    margin: 20px 0;
+    
+}
+
+.first-row,.second-row{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.first-row-allOrders,.second-row-processing{
+    height: 60%;
+    width: 50%;
+    margin: 10px 12px;
+    box-shadow: 0 0.188em 1.550em rgb(40, 29, 29);
+    border-radius: 10px;
+}
+
+#orders-count-div{
+    padding: 30px;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+#order-view-btn{
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: medium;
+    color: black;
+    background-color:white;
+}
+
+.top-row-canceled{
+    margin: 10px;
+}
+
+#order-view-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    background-color: rgb(31, 192, 31);
+}
+
+.first-row-allOrders{
+    background-color: rgba(0, 16, 247, 0.329);
+}
+
+.first-row-allOrders:hover,.first-row-newOrders:hover
+,.second-row-processing:hover,.second-row-completed:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+     /* filter: brightness(90%) */
+}
+
+.first-row-newOrders{
+    background-color: rgba(255, 0, 0, 0.406);
+}
+
+.second-row-processing{
+background-color: rgba(255, 68, 0, 0.365);
+}
+
+.second-row-completed{
+    background-color: rgba(0, 128, 0, 0.221);
+}
+
+.first-row-newOrders,.second-row-completed{
+ /* background-color: bisque; */
+ box-shadow: 0 0.188em 1.550em rgb(40, 29, 29);
+height: 60%;
+margin: 10px 12px;
+width: 50%;
+border-radius: 10px;
+}
+
+@media screen and (min-width:740px) {
+    .first-row-allOrders,.second-row-processing,
+    .first-row-newOrders,.second-row-completed{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:741px) and (max-width:999px) {
+    .first-row-allOrders,.second-row-processing,
+    .first-row-newOrders,.second-row-completed{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+.first-row,.second-row{
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row-allOrders,.second-row-processing,
+    .first-row-newOrders,.second-row-completed{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width:740px) {
+    #order-view-btn{
+        padding: 8px 10px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .bookings-order-main{
+    height: 80vh;
+    }
+    .first-row-allOrders,.second-row-processing,
+        .first-row-newOrders,.second-row-completed{
+            height: 35%;
+        }
+        #orders-count-div{
+            padding: 0 0;
+        }
+    }
+
+    .first-row-newOrders > h3,.second-row-processing > h3,.second-row-completed > h3{
+        margin: 15px 0;
+    }

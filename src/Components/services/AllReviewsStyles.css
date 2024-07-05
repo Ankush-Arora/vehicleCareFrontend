@@ -1,0 +1,87 @@
+.all-reviews-main{
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(110, 2, 2, 0.379);
+}
+
+.each-user-review-card{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+#hor-line-reviews{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    /* z-index: 2; */
+}
+
+#delete-btn-review{
+    color: red;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.review-heading-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: brown; */
+    width: 100%;
+}
+
+#text-content-review{
+    font-weight: 600;
+    font-size: smaller;
+    /* color: rgb(0, 136, 0); */
+    color: green;
+}
+
+.all-reviews-card-container{
+    /* background-color: green; */
+    flex: none;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    padding: 1%;
+    grid-template-columns: repeat(4, 1fr) ;
+    place-items: center;
+}
+
+@media screen and (max-width:1650px) {
+    .all-reviews-card-container{
+        grid-template-columns: repeat(3, 1fr) ;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .all-reviews-card-container{
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .all-reviews-card-container{
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+}
+
+@media screen and (max-width:460px) {
+    
+    .each-user-review-card{
+        height: 270px;
+        width: 350px;
+        overflow: auto;
+        /* background-color: rgb(66, 66, 157); */
+    }
+}

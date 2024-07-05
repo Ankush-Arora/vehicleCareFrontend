@@ -1,0 +1,77 @@
+.booking-main {
+    /* background-color:  crimson; */
+    display: grid;
+    place-items: center;
+    row-gap: 1em;
+    /* column-gap: 1em; */
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+@media screen and (max-width:950px) {
+    .booking-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:580px) {
+    .booking-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:410px) {
+    .booking-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.booking-main div {
+    padding: 15px 5px;
+    height: 120px;
+    width: 180px;
+    border-radius: 10px;
+    /* box-shadow: 0 0.188em 1.550em rgb(58, 47, 47); */
+    /* background-color:rgb(224, 255, 254) */
+}
+
+.booking-main div h3 {
+    font-weight: 800;
+    font-size: larger;
+}
+
+.booking-main div h6 {
+    margin: 10px 0;
+}
+
+.booking-main div h3 span {
+    font-weight: 600;
+    font-size: medium;
+}
+
+.process-heading button {
+    font-weight: 600;
+    padding: 5px;
+    margin: 3px 0;
+    cursor: pointer;
+    background-color: rgb(234, 239, 246);
+    border-radius: 5px;
+}
+
+.process-animation-right {
+    animation: rightMovement;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes rightMovement {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

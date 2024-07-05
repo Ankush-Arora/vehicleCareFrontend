@@ -1,0 +1,135 @@
+.order-card-component{
+        margin: 10px;
+        height: 350px;
+        width: 400px;
+        border-radius: 5px;
+        /* background-color: rgba(245, 245, 245, 0.696); */
+        background-color: rgba(128, 128, 128, 0.075);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-content: start;
+        box-shadow: 0 0.188em 1.550em rgb(40, 29, 29);
+}
+
+@media screen and (max-width:500px) {
+        .order-card-component{
+                height: 350px;
+                width: 350px;}
+}
+
+.order-card-component >div{
+        background-color: brown;  
+}
+
+.order-card-component > h3{
+        font-weight: 900;
+        font-size: large;
+        color: rgb(5, 103, 5);
+}
+
+#booked-date{
+        color:green;
+}
+
+#order-status-icon{
+        font-weight: 900;
+        font-size: xx-large;
+}
+
+#status-icon-canceled{
+        color:red;
+}
+
+#status-icon-processing{
+        color: blue;
+}
+
+
+#status-icon-completed{
+        color: green;
+}
+
+.order-card-component >h3 >p{
+                color: black;
+}
+
+.order-card-component > ul,.order-card-component >h3 {
+       display: flex;
+       flex-direction: column;
+       align-items: start;
+       justify-content: start;
+       margin-left: 25px;
+}
+
+.order-card-component > ul{
+        text-decoration: none;
+        list-style: none;
+        padding: 2px;
+}
+
+.order-card-component{
+        overflow: auto;
+}
+
+#mail-icon-bookings,#call-icon-bookings{
+        color: rgb(20, 165, 20);
+        font-size: large;
+}
+
+#cancel-order-btn{
+        padding: 3px 2px;
+        border-radius: 5px;
+        background-color: rgba(255, 0, 0, 0.468);
+        cursor: pointer;
+        font-weight:  bolder;
+        margin-left: 80px;
+}
+
+#add-review-order-btn{
+        padding: 3px 2px;
+        border-radius: 5px;
+        background-color: rgba(6, 116, 6, 0.594);
+        cursor: pointer;
+        font-weight:  bolder;
+        margin-left: 80px;
+        filter: brightness(80%);
+}
+
+#add-review-order-btn:hover{
+        filter: brightness(100%);
+        transform: scale(1.1); 
+       /* transition-duration: 1s; */
+}
+
+#cancel-order-btn:hover{
+        background-color: red;
+         transform: scale(1.1); 
+        transition-duration: 1s;
+}
+
+#modal-add-review{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+}
+
+#modal-add-review > textarea{
+        width: 100%;
+        height: 60px;
+        font-size: large;
+        padding: 2%;
+}
+
+@media screen and (max-width:600px) {
+        
+#modal-add-review > textarea{
+        height: 120px;
+}
+}
+
+#vehicle-details{
+        font-weight: 600;
+        font-size: small;
+        color: rgb(189, 11, 11);
+}

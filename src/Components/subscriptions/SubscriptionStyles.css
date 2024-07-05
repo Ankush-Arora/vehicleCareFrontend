@@ -1,0 +1,64 @@
+.one-month-sub,.three-month-sub,.six-month-sub,.twelve-month-sub{
+    background-color:rgba(185, 210, 201, 0.461);
+    height: 330px;
+    width: 320px;
+    margin: 20px 10px;
+    color: black;
+    flex-shrink: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.one-month-sub > div , .three-month-sub > div,.six-month-sub > div ,.twelve-month-sub > div 
+{
+    margin: 15px;
+}
+
+#price-heading{
+    font-weight: 900;
+    font-size: x-large;
+}
+
+#month-heading{
+    font-weight: 700;
+    font-size: large;
+    color: green;
+}
+
+#subs-description{
+    font-weight: 700;
+    font-size: small;
+    color: grey;
+    margin: 0 20px;
+}
+
+#join-button > button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: rgba(32, 195, 32, 0.671);
+}
+
+#join-button > button:hover{
+    filter: brightness(80%);
+}
+
+.subs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* background-color: blue; */
+    width: 100%;
+    margin: 20px 0;
+   
+}
+
+@media screen and (max-width:1450px) {
+    .subs-container{
+    justify-content: start;
+}
+}

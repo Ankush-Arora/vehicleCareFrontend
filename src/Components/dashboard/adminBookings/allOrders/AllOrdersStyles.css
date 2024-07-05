@@ -1,0 +1,61 @@
+.all-orders-top{
+    height: 100vh;
+    overflow: auto;
+}
+.edit-booking-modal-class{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding: 12px 25px;
+    border-radius: 10px;
+    place-items: center;
+    background-color: whitesmoke;
+    background-color: rgba(173, 200, 200, 0.989);
+}
+
+#all-booked-orders-search{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    margin-top: 30px;
+}
+
+  @media screen and (max-width:600px) {
+    #all-booked-orders-search{
+        width: 80%;
+    }
+} 
+
+.delete-booking-modal-class{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    padding: 12px 25px;
+    border-radius: 10px;
+    place-items: center;
+    /* background-color: whitesmoke; */
+    background-color: rgba(173, 200, 200, 0.989);
+}
+
+@media screen and (max-width:840px) {
+    .edit-booking-modal-class{
+        width: 100%;
+    }
+    .delete-booking-modal-class{
+        width: 80%;
+        padding: 6px 12px;
+        /* background-color: blue; */
+    }
+}
+ 
+
+/* @media screen and (max-width:1250px) {
+    .delete-booking-modal-class{
+        width: 40%;
+    }
+} */

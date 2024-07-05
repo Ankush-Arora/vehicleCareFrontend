@@ -1,0 +1,210 @@
+ .each-service-top{
+   height: 120vh;
+ }
+
+ #book-service-link a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-weight: 600;
+   /* background-color: blue; */
+   padding: 10px 1px;
+}
+ 
+ .each-service-reviews{
+  flex: none;
+    display: flex;
+   overflow-x: auto;
+   padding: 20px 5px;
+ }
+
+ .each-service-details{
+   display: flex;
+   justify-content: center;
+ }
+
+ #no-reviews-heading{
+  color:rgba(128, 128, 128, 0.532);
+ }
+
+
+ .each-service-details-image{
+   background-color: blue;
+    height: 60%;
+    max-width: 50%;
+ }
+
+ .each-service-details-data{
+   background-color:rgba(194, 191, 191, 0.112);
+   padding: 20px 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+ }
+
+ .each-service-details-data > ul
+ {
+   text-decoration: none;
+   list-style: none;
+ }
+
+ .each-service-details-data > ul >li{
+   margin: 20px 10px;
+   display: flex;
+ }
+
+ @media screen and (max-width:900px) {
+   .each-service-details{
+      flex-direction: column;
+   }
+
+   /* .each-service-reviews{
+    margin-bottom: 120px;
+   } */
+
+   .each-service-top{
+      height: 160vh;
+    }
+
+   #service-image{
+      height: 300px;
+      width: 400px;
+      margin : 1% 10%;
+   }
+ }
+
+ #service-btns{
+   display: flex;
+   justify-content:   start
+ }
+
+ #service-btns button{
+  margin: 10px 10px;
+ }
+
+ #service-name{
+   font-weight: 800;
+   font-size: x-large;
+ }
+
+ #service-description{
+   font-weight: 600;
+   font-size: medium;
+   color: rgba(6, 131, 6, 0.678);
+ }
+
+ #overall-rating-heading{
+   color: rgba(0, 0, 255, 0.491);
+ }
+
+ #service-btns > button{
+   cursor: pointer;
+   padding: 8px 5px;
+   border-radius: 5px;
+   background-color: rgba(198, 193, 193, 0.626);
+   font-weight: 700;
+ }
+
+ #service-btns > button:hover{
+         background-color: rgba(19, 205, 19, 0.591);
+ }
+
+ @media screen and (max-width:550px){
+   #service-image{
+      height: 80%;
+      width: 80%;
+   }
+
+   #service-description{
+      font-size:  small;
+    }
+ }
+
+
+ #greenFont{
+  color: green;
+  font-weight: 600;
+  font-size: large;
+ }
+
+ #redFont{
+  color: green;
+ }
+
+ #review-heading{
+  color: green;
+ }
+
+ #price-service{
+  color: rgb(108, 108, 108);
+  font-weight: 500;
+ }
+
+ #price-service >span{
+  margin-left: 15px;
+  font-weight: 800;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.831);
+ }
+
+ @media screen and (max-width:550px) {
+
+  #service-btns{
+    display: flex;
+    justify-content: start
+  }
+ 
+  #service-btns button{
+   margin: 5px 5px;
+   padding: 4px 2px;
+   font-weight: 600;
+  }
+ 
+  #service-name{
+    font-weight: 600;
+    font-size: large;
+  }
+ 
+  #service-description{
+    font-weight: 600;
+    font-size: small;
+    color: rgba(6, 131, 6, 0.678);
+  }
+
+  #price-service{
+    color: rgb(108, 108, 108);
+    font-weight: 400;
+   }
+  
+   #price-service >span{
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.831);
+   }
+
+   .each-service-details-data{
+    padding: 12px 30px;
+  }
+
+ }
+
+ #service-image{
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+#no-reviews-heading{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   
+}
+
+@media screen and (max-width:740px) and (min-width:600px ) {
+  .each-service-top{
+    height: 160vh;
+  }
+}

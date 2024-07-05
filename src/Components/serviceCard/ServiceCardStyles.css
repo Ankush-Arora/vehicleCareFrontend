@@ -1,0 +1,143 @@
+.service-card-container{
+    /* background-color:rgb(202, 243, 243);  */
+    background-color:rgba(185, 210, 201, 0.632);
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0.188em 1.550em rgba(212, 206, 206, 0.447);
+}
+
+.service-card-container:hover{
+    transform: translateY(-8px);
+    background-color: rgba(195, 191, 191, 0.877);
+    cursor: pointer;
+}
+
+.horizontal-line-main
+{
+    /* margin: 2px; */
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.star-ratings-service{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(189, 154, 154, 0.644); */
+    font-size: small;
+}
+
+#stars-id{
+    font-size: xx-large;
+}
+
+.service-card-container-parent{
+    text-decoration: none;
+}
+ 
+@media screen and (max-width:380px) {
+    .service-card-container{
+        height: 300px;
+    width: 250px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .service-card-container{
+        height: 280px;
+    width: 220px;
+    font-size: small;
+    }
+}
+
+.image-area{
+    background-color: aqua;
+    height: 60%;
+    width: 90%;
+    margin: 5px 1px;
+    object-fit: cover;
+}
+
+
+.image-area img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    filter: brightness(80%);
+    /* aspect-ratio: 1/1; */
+}
+
+.image-area img:hover{
+    cursor: pointer;
+    filter: brightness(100%);
+    transform: scale(1.01);
+}
+
+#service-description{
+    font-size: medium;
+    font-weight:600 ;
+    color: rgba(128, 128, 128, 0.852);
+}
+
+#service-unavailable-heading{
+    color: red;
+}
+
+
+.text-area{
+    /* background-color: grey; */
+    height: 60%;
+    width: 90%;
+    object-fit: cover;
+    margin: 1px 0;
+    overflow:hidden;
+}
+.text-area h6{
+    color: rgb(22, 22, 245);
+    display: flex;
+    margin: 2px 0;
+    font-size: medium;
+}
+.text-area > h6 {
+    font-weight: 900;
+    color: green;
+    display: flex;
+     
+}
+
+#service-price{
+    margin-left: 40px;
+}
+
+
+.text-area h4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+
+#rating-text{
+    display: flex;
+}
+
+.text-area h4 a{
+    padding: 1px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(101, 101, 241);
+}
+
+.text-area h4 a:hover{
+    /* filter: brightness(80%); */
+    background-color: rgb(0, 186, 0);
+    /* border: none; */
+}
+

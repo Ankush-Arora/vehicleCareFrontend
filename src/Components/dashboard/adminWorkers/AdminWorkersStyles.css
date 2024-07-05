@@ -1,0 +1,22 @@
+.all-workers-top{
+    height: 100vh;
+    overflow: auto;
+}
+
+.edit-modal-class input{
+margin: 2px 0;
+}
+
+.edit-modal-class div{
+    margin-left: 5% ;
+}
+
+
+.edit-modal-class > input::file-selector-button{
+    z-index: 2;
+     margin: 0;
+     background-color: white;
+     height: 2em;
+     cursor: pointer;
+     border-radius: 5px;
+  }

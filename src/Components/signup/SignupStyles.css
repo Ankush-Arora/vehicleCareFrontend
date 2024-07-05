@@ -1,0 +1,123 @@
+h2 {
+    /* background-color: blue; */
+    height: 250px;
+    color: black;
+}
+
+.signup-container {
+    background-color: rgba(135, 134, 134, 0.397);
+    width: 30em;
+    height: 25em;
+    /* position:  relative; */
+    border-radius: 1em;
+    /* box-shadow: 0 0.188em 1.550em rgb(156, 156, 156); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input {
+    border: none;
+    background-color: rgba(229, 226, 226);
+    height: 3em;
+    width: 80%;
+    border-radius: 0;
+    text-align: start;
+    padding: 1em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.signup-main {
+    padding: 160px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-heading {
+    border: none;
+    /* background-color: rgba(229,226,226); */
+    height: 1em;
+    width: 80%;
+    /* border-radius: 0.25em; */
+    text-align: start;
+    justify-content: left;
+    /* padding: 2em; */
+}
+
+.signup-btn {
+    padding: 0.6em;
+    margin-top: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    width: 80%;
+    background-color: rgb(79, 79, 245);
+    border-radius: 0.8em;
+}
+
+.signup-btn:hover {
+    font-weight: 700;
+    width: 80%;
+    background-color: rgb(4, 134, 4);
+}
+
+@media screen and (max-width:500px) {
+
+    .signup-main {
+        padding: 120px 60px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .signup-container {
+        width: 25em;
+        height: 20em;
+    }
+
+    input {
+        height: 2.2em;
+        width: 80%;
+        border-radius: 0;
+        text-align: start;
+        padding: 0.6em;
+    }
+
+    .input-heading {
+        height: 0.8em;
+        width: 80%;
+        font-size: small;
+        /* border-radius: 0.25em; */
+        text-align: start;
+        justify-content: left;
+        /* padding: 2em; */
+    }
+
+    .signup-message {
+        width: 60%;
+        font-size: 1fr
+    }
+}
+
+.signup-message {
+    font-size: small;
+}
+
+#sign-up-password{
+    display: flex;
+    width: 80%;
+}
+ 
+#sign-up-password  {
+    background-color:  rgba(229, 226, 226);
+}
+ 
+ #sign-up-password > input{
+    width: 90%;
+ }
+ 

@@ -1,0 +1,218 @@
+.home-container h2 {
+    background-color: blue;
+    color: black;
+    height: 120px;
+}
+
+.home-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container h1 {
+    background-color: green;
+    color: black;
+    height: 120px;
+}
+
+.modal-testing {
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    color: black;
+
+}
+
+.first-image {
+    height: 80%;
+    width: 100%;
+    margin: 50px 0;
+    /* background-color: rgb(26, 16, 16); */
+    object-fit: cover;
+}
+
+
+.first-image img {
+    filter: brightness(80%);
+    width: 100%;
+    height: 60%;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
+
+.first-image img:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.first-home-heading p {
+    font-weight: 700;
+    font-size: large;
+}
+
+.first-home-heading {
+    padding: 10px 0;
+    /* background-color: rgba(115, 249, 249, 0.744); */
+    /* background-color:rgba(112, 111, 111, 0.432); */
+    color: green;
+}
+
+.varification-heading {
+    font-weight: 900;
+    font-size: x-large;
+    margin: 40px 0;
+}
+
+@media screen and (max-width:340px) {
+
+    .first-home-heading p {
+        font-weight: 500;
+        font-size: small;
+
+    }
+
+    .first-home-heading {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .first-image img {
+        width: 100%;
+        aspect-ratio: unset;
+    }
+}
+
+#moving-car{
+    font-size: 3em;
+    color: rgb(42, 166, 166);
+    position: relative;
+    animation-name: movingCarLeftToRight; 
+    animation-duration: 10s;   
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes movingCarLeftToRight {
+    from{
+       left: 0;
+    }
+    to{
+        left: 1800px;
+    }
+}
+
+@media screen and (max-width:1900px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 1700px;
+        }
+    }
+}
+@media screen and (max-width:1750px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 1500px;
+        }
+    }
+}
+
+@media screen and (max-width:1550px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 1300px;
+        }
+    }
+}
+
+@media screen and (max-width:1350px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 1050px;
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 900px;
+        }
+    }
+}
+@media screen and (max-width:950px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 750px;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 600px;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 250px;
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    @keyframes movingCarLeftToRight {
+        from{
+           left: 0;
+        }
+        to{
+            left: 180px;
+        }
+    }
+}
