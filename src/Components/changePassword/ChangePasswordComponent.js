@@ -22,6 +22,7 @@ const ChangePasswordComponent = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        const controller=new AbortController();
         if (isUpdated) {
             alert.success("Password changed successfully!");
             dispatch({ type: CHANGE_USER_PASSWORD_RESET });
@@ -40,6 +41,9 @@ const ChangePasswordComponent = () => {
         }
         if (message) {
             alert.error(message);
+        }
+        return ()=>{
+            controller.abort();
         }
     }, [dispatch, message,error, isUpdated])
 

@@ -37,6 +37,7 @@ const DashboardComponent = () => {
   }
 
   React.useEffect(() => {
+    const controller=new AbortController();
     if (error) {
       if (error==='Please login first') 
         {alert.error('Session time out login again');
@@ -52,7 +53,9 @@ const DashboardComponent = () => {
     dispatch(getAllBookings());
     dispatch(getAllWorkers());
     //  console.log(users);
-
+return ()=>{
+  controller.abort();
+}
   }, [dispatch, rows]);
 
   return (

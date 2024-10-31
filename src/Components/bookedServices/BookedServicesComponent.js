@@ -13,7 +13,11 @@ const BookedServicesComponent = () => {
   const {loading,user}=useSelector((state)=>state.user);
 
   useEffect(()=>{
+    const controller=new AbortController();
         dispatch(getAllBookingLoggedInUser());
+        return ()=>{
+          controller.abort();
+        }
   },[dispatch])
 
   return (

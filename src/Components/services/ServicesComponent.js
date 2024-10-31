@@ -17,8 +17,12 @@ const ServicesComponent = () => {
   const [service,setService]=useState();
 
   useEffect(()=>{
+    const controller=new AbortController();
        dispatch(getService());
       //  if(services===null) alert('server is not working');
+      return ()=>{
+        controller.abort();
+      }
   },[dispatch])
 
   // const services = [

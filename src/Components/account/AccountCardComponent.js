@@ -16,12 +16,7 @@ const AccountCardComponent = (props) => {
     const navigate = useNavigate();
     const alertMessage=useAlert();
     const[newUserName,setNewUserName]=useState("");
-    // const [user,setUser]=useState(props.userInfo);
-
-    // useEffect(() => {
-    //     // console.log('in accoutn', props);
-    // })
-
+   
     const openChangeUserNameModalMethod = () => {
         const modalElement = document.getElementById('change-userName-modal');
         modalElement.showModal();
@@ -128,8 +123,6 @@ const AccountCardComponent = (props) => {
                             <Link onClick={openDeleteLogoutModalMethod}>Logout</Link>
                         </div> <hr className='horizontal-line-account' />   </> : <></>
                 }
-
-
             </div>
     )
 }

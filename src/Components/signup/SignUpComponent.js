@@ -28,6 +28,7 @@ const SignUpComponent = () => {
 
 
   useEffect(() => {
+    const controller=new AbortController();
     if (error) {
       if (error === 'Please login first') {
         // console.log("");
@@ -40,6 +41,9 @@ const SignUpComponent = () => {
       navigate("/services")
     }
     // console.log("user in signup = ",user);
+    return ()=>{
+      controller.abort();
+    }
   }, [dispatch, error, alert, isAuthenticated])
 
 

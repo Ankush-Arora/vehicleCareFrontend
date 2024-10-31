@@ -4,6 +4,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+
 const AgentVerificationComponent = () => {
   return (
     <div className='verification-main'>

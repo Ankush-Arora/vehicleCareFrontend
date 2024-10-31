@@ -46,14 +46,7 @@ const AboutUsComponent = () => {
             services. Once on the platform, our match-making algorithm identifies professionals who are closest to the users' requirements and
             available at the requested time and date.</p>
         </div>
-        {/* <div className='about-fourth'>
-          <span className='about-span-heading'>Our Leadership team</span>
-          <div className='about-fourth-leaders'>
-            {
-              teamMember.map((eachMember, idx) => <TeamCardComponent memberProp={eachMember} />)
-            }
-          </div>
-        </div> */}
+       
       </div>
     </div></>
   )

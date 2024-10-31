@@ -17,6 +17,7 @@ const EachWorkerComponent = () => {
 
       const [workerDetails,setWorkerDetails]=React.useState(null);
     React.useEffect(()=>{
+        const controller=new AbortController();
         try{
             if(location.state.workerProp!==null)
             setWorkerDetails(location.state.workerProp);
@@ -26,7 +27,9 @@ const EachWorkerComponent = () => {
             navigate('/');
             // window.location.reload();
         }
-        
+        return ()=>{
+            controller.abort();
+        }
     },[workerDetails])
 
     const location = useLocation();

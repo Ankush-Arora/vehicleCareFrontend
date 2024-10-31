@@ -37,6 +37,7 @@ const CompletedOrdersComponent = () => {
     }
 
     React.useEffect(() => {
+        const controller=new AbortController();
         dispatch(getAllBookings());
         if(bookingErrors)
         {
@@ -48,8 +49,10 @@ const CompletedOrdersComponent = () => {
              alertMessage.success(bookingErrors);
              dispatch({ type: CLEAR_BOOKINGS_ERRORS });
         }
-       
-    }, [dispatch  ])
+       return ()=>{
+        controller.abort();
+       }
+    }, [dispatch])
 
     return (
         (loading)?<React.Fragment><Loading/></React.Fragment>:

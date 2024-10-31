@@ -25,6 +25,7 @@ const ResetPasswordComponent = () => {
     const paramUrl=useParams();
 
     useEffect(() => {
+        const controller=new AbortController();
         if (success) {
             alert.success("Password updated successfully!");
             navigate('/login');
@@ -39,6 +40,9 @@ const ResetPasswordComponent = () => {
             else
             alert.error(error);
             dispatch({type:CLEAR_ERRORS})
+        }
+        return ()=>{
+            controller.abort();
         }
     }, [dispatch,error, success])
 

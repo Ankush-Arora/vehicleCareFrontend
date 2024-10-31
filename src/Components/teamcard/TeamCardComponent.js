@@ -5,7 +5,11 @@ const TeamCardComponent = (props) => {
 
   const [member, setMember] = useState(props.memberProp);
   useEffect(() => {
-    console.log('Data is here', member.name);
+    // console.log('Data is here', member.name);
+    const controller=new AbortController();
+    return ()=>{
+        controller.abort();
+    }
   })
   return (
     <div className='team-card-container'>

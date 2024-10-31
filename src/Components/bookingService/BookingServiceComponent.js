@@ -66,6 +66,8 @@ const BookingServiceComponent = () => {
   }
 
   useEffect(() => {
+
+    const controller=new AbortController();
     try {
       dispatch(loadUserMethod());
       setServiceName(location.state.serviceProp.name);
@@ -85,6 +87,10 @@ const BookingServiceComponent = () => {
       setServiceName('Not selected');
       navigate('/services');
     }
+    return ()=>{
+      controller.abort();
+    }
+
   }, [dispatch, bookingSuccess, bookingError])
 
   const openCreateBookingModalMethod = () => {

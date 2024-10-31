@@ -35,12 +35,16 @@ const NavbarComponent = () => {
 
 
   useEffect(() => {
+    const controller=new AbortController();
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
     dispatch(loadUserMethod());
     // console.log('User in navbar', user);
+    return ()=>{
+      controller.abort();
+    }
   }, [])
 
   const changeLoginBtn = () => {

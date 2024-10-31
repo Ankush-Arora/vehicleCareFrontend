@@ -10,7 +10,11 @@ const AdminBookings = () => {
     const dispatch=useDispatch();
 
     useEffect(()=>{
+      const controller=new AbortController();
       dispatch(getAllBookings());
+      return ()=>{
+        controller.abort();
+      }
     },[dispatch]);
 
     

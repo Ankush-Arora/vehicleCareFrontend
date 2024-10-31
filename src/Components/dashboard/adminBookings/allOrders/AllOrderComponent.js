@@ -74,6 +74,7 @@ const AllOrderComponent = () => {
     }
 
     React.useEffect(() => {
+        const controller=new AbortController();
         dispatch(getAllBookings());
         if(bookingError)
         {
@@ -94,6 +95,9 @@ const AllOrderComponent = () => {
             alertMessage.success('Booking Deleted!');
             dispatch({ type: BOOKING_DELETE_RESET });
             navigate('/admin/dashboard/bookings');
+        }
+        return ()=>{
+            controller.abort();
         }
     }, [dispatch,bookingError, isBookingUpdated, isBookingDeleted])
 

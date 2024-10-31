@@ -170,6 +170,7 @@ const AdminWorkers = () => {
     }
 
         React.useEffect(()=>{
+            const controller=new AbortController();
                 dispatch(getAllWorkers());
                 if(success)
                 {
@@ -198,6 +199,9 @@ const AdminWorkers = () => {
                 {
                     alertMessage.error("Worker not deleted some error occured");
                     dispatch({type:CLEAR_WORKER_ERRORS})
+                }
+                return ()=>{
+                    controller.abort();
                 }
         },[dispatch,success,error,isWorkerDeleted,isWorkerUpdated,deletedError])
 

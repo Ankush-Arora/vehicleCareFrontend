@@ -26,9 +26,12 @@ const ServiceCardComponent = (props) => {
   };
 
   useEffect(() => {
+    const controller=new AbortController();
     dispatch(loadUserMethod());
     dispatch(getServiceDetailsById(props.serviceProps._id));
     setRatingValue(currentService.ratings);
+    return ()=>{
+    controller.abort();}
   }, [dispatch])
 
 

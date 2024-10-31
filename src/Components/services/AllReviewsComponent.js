@@ -25,6 +25,7 @@ const AllReviewsComponent = () => {
   const { loading, allReviews, overAllrating,isDeleted,error } = useSelector((state) => state.allReviews);
 
   useEffect(() => {
+    const controller=new AbortController();
     try {
       dispatch(getServiceReviews(paramsUrl.id));
       // alert.success('overAllRating=' + overAllrating);
@@ -41,6 +42,9 @@ const AllReviewsComponent = () => {
     }
     catch {
       navigate('/');
+    }
+    return ()=>{
+      controller.abort();
     }
   }, [dispatch,isDeleted,error]);
 

@@ -81,6 +81,7 @@ const AdminUsers = () => {
    
 
     React.useEffect(()=>{
+        const controller=new AbortController();
         if(error)
         {
             if(error==='Please login first')
@@ -118,6 +119,9 @@ const AdminUsers = () => {
             // navigate('/admin/dashboard');
         }
          dispatch(getAllUsersMethod());
+         return ()=>{
+            controller.abort();
+         }
     },[dispatch,isUpdated,isDeleted,userError]);
     const navigate=useNavigate();
 

@@ -25,6 +25,7 @@ const ForgetPasswordComponent = () => {
   }
 
   useEffect(()=>{
+    const controller=new AbortController();
     if(error)
     {
       alertMsg.error(error);
@@ -36,6 +37,9 @@ const ForgetPasswordComponent = () => {
      setTimeout(() => {
       navigate('/');
      }, 1500);
+    }
+    return ()=>{
+      controller.abort();
     }
   },[dispatch,message,error])
 

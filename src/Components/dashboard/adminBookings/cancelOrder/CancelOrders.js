@@ -34,7 +34,11 @@ const CancelOrders = () => {
     }
 
     React.useEffect(() => {
+        const controller=new AbortController();
         dispatch(getAllBookings());
+        return ()=>{
+            controller.abort();
+        }
     }, [dispatch]);
 
     return (

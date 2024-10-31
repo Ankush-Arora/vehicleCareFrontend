@@ -9,8 +9,7 @@ import Loading from '../loading/Loading'
 const AccountComponent = () => {
 
   const {loading, isAuthenticated, user } = useSelector((state) => state.user);
-    // const dispatch = useDispatch();
-  
+   
   return (
     (!isAuthenticated)?<Loading/>:
     <>
@@ -18,7 +17,6 @@ const AccountComponent = () => {
      <MetaData title="Account Page"/>
     <div className='account-container'>
      <AccountCardComponent userInfo={user} isAuthenticated={isAuthenticated}/>
-      
     </div>
     </>
   )

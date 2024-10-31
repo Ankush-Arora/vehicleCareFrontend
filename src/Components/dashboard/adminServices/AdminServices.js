@@ -163,6 +163,7 @@ const AdminServices = () => {
     }
 
     React.useEffect(() => {
+        const controller=new AbortController();
         dispatch(getService());
         if(error)
         {
@@ -204,6 +205,9 @@ const AdminServices = () => {
             alert1.success("Service has been deleted");
             navigate('/admin/dashboard');
             dispatch({type:ADMIN_DELETE_SERVICE_RESET});
+        }
+        return ()=>{
+            controller.abort();
         }
     }, [dispatch,error,alert1,newServiceCreated,deleteError,isDeleted,updatedError,isUpdated])
 

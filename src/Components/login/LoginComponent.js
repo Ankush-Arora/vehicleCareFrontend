@@ -31,6 +31,7 @@ const LoginComponent = ({ history }) => {
   }
 
   useEffect(() => {
+    const controller=new AbortController();
     if (error) {
       if (error === 'Please login first') {
         // console.log("");
@@ -42,6 +43,9 @@ const LoginComponent = ({ history }) => {
     if (isAuthenticated) {
       navigate("/services")
     }
+      return ()=>{
+        controller.abort();
+      }
   }, [dispatch, error, alert, isAuthenticated])
 
   return (

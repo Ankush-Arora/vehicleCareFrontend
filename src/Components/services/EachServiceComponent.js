@@ -74,8 +74,12 @@ const EachServiceComponent = () => {
   }
 
   useEffect(() => {
+    const controller=new AbortController();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     dispatch(getServiceDetailsById(paramUrl.id));
+    return ()=>{
+      controller.abort();
+    }
   }, [dispatch, error])
 
 
